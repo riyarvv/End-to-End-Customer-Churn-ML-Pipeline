@@ -1,63 +1,63 @@
-customerId
+customerId  
 unique identification for each customer
 
-gender
+gender  
 Male/Female
 
-SeniorCitizen
-whether customer is a senior citizen
+SeniorCitizen  
+whether customer is a senior citizen  
 0/1 
 
-Partner
-whether customer has a partner 
+Partner  
+whether customer has a partner  
 Yes/No 
 
-Dependents
-whether customer has dependents
+Dependents  
+whether customer has dependents  
 Yes/No
 
-tenure
+tenure  
 duration of availing service
 
-PhoneService
-whether customer has phone service
+PhoneService  
+whether customer has phone service  
 Yes/No
 
-MultipleLines
-whether customer has mmultiple lines
+MultipleLines  
+whether customer has mmultiple lines  
 Yes/No/No phone service
 
-InternetService
+InternetService  
 Fibre optic/DSL/No
 
-OnlineSecurity
+OnlineSecurity  
 Yes/No/No internet service
 
-DeviceProtection
+DeviceProtection  
 Yes/No/No internet service
 
-TechSupport
+TechSupport  
 Yes/No/No internet service
 
-StreamingTV
+StreamingTV  
 Yes/No/No internet service
 
-StreamingMovies
+StreamingMovies  
 Yes/No/No internet service
 
-Contract
+Contract  
 Month-to-month/One year/Two year
 
-PaperlessBilling
+PaperlessBilling  
 Yes/No
 
-PaymentMethod
+PaymentMethod  
 Electronic check/Mailed check/Bank transfer (automatic)/Credit card (automatic)
 
-MonthlyCharges
+MonthlyCharges  
 charges per month
 
 TotalCharges
 
-Churn
+Churn  
 Yes/No
