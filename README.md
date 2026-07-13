@@ -25,3 +25,7 @@ Day 4/35 completed
 - Plotted countplots for service and billing columns
 
 Day 5/35 completed
+- Plotted histogram, KDE, and boxplot
+- Learnt about outliers
+
+Day 6/35 completed
