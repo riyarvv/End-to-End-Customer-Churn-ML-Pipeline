@@ -13,6 +13,15 @@ Day 1/35 completed
 - Loaded dataset as dataFrame
 - Used head(), shape, columns, and info()
 
-Day 2/35 completed  
+Day 2/35 completed
+- Understood the dataset
+- Gathered info for documentation in docs folder using value_counts()
+
+Day 3/35 completed  
 - Performed EDA
 - Plotted countplots for various columns in dataFrame
+
+Day 4/35 completed
+- Plotted countplots for service and billing columns
+
+Day 5/35 completed
