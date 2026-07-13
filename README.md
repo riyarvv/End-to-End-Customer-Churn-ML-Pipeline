@@ -29,3 +29,5 @@ Day 5/35 completed
 - Learnt about outliers
 
 Day 6/35 completed
+- Bivariate analysis
+- Crosstab, countplot, and boxplot
