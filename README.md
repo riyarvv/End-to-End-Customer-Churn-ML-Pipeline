@@ -35,3 +35,7 @@ Day 6/35 completed
 Day 7/35 completed
 - Analyxed correlation heatmap
 - Completed EDA analysis
+
+Day 8/35 completed
+- Handled missing values
+- Cleaned and saved the processed dataset
