@@ -31,3 +31,7 @@ Day 5/35 completed
 Day 6/35 completed
 - Bivariate analysis
 - Crosstab, countplot, and boxplot
+
+Day 7/35 completed
+- Analyxed correlation heatmap
+- Completed EDA analysis
