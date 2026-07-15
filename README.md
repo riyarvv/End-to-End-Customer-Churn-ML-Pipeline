@@ -39,3 +39,9 @@ Day 7/35 completed
 Day 8/35 completed
 - Handled missing values
 - Cleaned and saved the processed dataset
+
+Day 9/35 completed
+- Created src folder in drive and added .py files
+- Created new columns after feature engineering
+
+Day 10/35 completed
