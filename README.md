@@ -49,3 +49,4 @@ Day 10/35 completed
 - Prevented data leakage
 
 Day 11/35 completed
+- Preprocessing with encoding and scaling
