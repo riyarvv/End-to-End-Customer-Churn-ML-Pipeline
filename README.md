@@ -45,3 +45,7 @@ Day 9/35 completed
 - Created new columns after feature engineering
 
 Day 10/35 completed
+- Split data into train and test
+- Prevented data leakage
+
+Day 11/35 completed
