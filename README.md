@@ -50,3 +50,7 @@ Day 10/35 completed
 
 Day 11/35 completed
 - Preprocessing with encoding and scaling
+
+Day 12/35 completed
+- Trained dataset on 3 basic models
+- Saved reusable pipelines
