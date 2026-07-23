@@ -54,3 +54,8 @@ Day 11/35 completed
 Day 12/35 completed
 - Trained dataset on 3 basic models
 - Saved reusable pipelines
+
+Day 13/35 completed
+- Evaluated models on accuracy, precision, recall, f1, and roc
+
+Day 14/35 completed
