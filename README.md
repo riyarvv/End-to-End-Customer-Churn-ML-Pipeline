@@ -59,3 +59,6 @@ Day 13/35 completed
 - Evaluated models on accuracy, precision, recall, f1, and roc
 
 Day 14/35 completed
+- Refactor project structure
+- Create reusable utility modules
+
