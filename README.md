@@ -62,3 +62,10 @@ Day 14/35 completed
 - Refactor project structure
 - Create reusable utility modules
 
+Day 15/35 completed
+- Hyperparameter tuning
+- Comparison of accuracy
+
+Day 16/35 completed
+- Model explainability
+- Identified features had greater impact on churn
