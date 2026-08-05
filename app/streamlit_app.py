@@ -39,7 +39,21 @@ Built by:
 Riya
 """)
 
-model_path = BASE_DIR / "models" / "logistic_regression.pkl"
+st.sidebar.title("📊 Customer Churn Predictor")
+
+page = st.sidebar.radio(
+    "Navigation",
+    [
+        "Prediction",
+        "About Model",
+        "Business Insights"
+    ]
+)
+
+if page == "Prediction":
+
+    # Put ALL your existing prediction code here
+    model_path = BASE_DIR / "models" / "logistic_regression.pkl"
 
 model = joblib.load(model_path)
 
@@ -88,7 +102,7 @@ monthly = st.number_input(
 total = st.number_input(
     "Total Charges",
     min_value=0.0,
-    value=700.0
+    value=2200.0
 )
 
 st.header("Services")
@@ -211,6 +225,17 @@ if st.button("Predict Churn"):
         f"{churn_probability:.2f}%"
     )
 
+    st.progress(churn_probability / 100)
+
+    if churn_probability < 30:
+      st.success("🟢 Low Risk")
+
+    elif churn_probability < 70:
+      st.warning("🟡 Medium Risk")
+
+    else:
+      st.error("🔴 High Risk")
+
     if prediction == "Yes":
 
         st.warning("""
@@ -230,3 +255,52 @@ Customer appears loyal.
 
 Continue providing good service.
 """)
+    with st.expander("Customer Summary"):
+      st.dataframe(input_df)
+
+elif page == "About Model":
+
+    st.title("About the Model")
+
+    st.write("""
+    Model Used:
+    Logistic Regression
+
+    Dataset:
+    IBM Telco Customer Churn
+
+    Accuracy:
+    81%
+
+    ROC-AUC:
+    0.84
+    """)
+
+elif page == "Business Insights":
+
+    st.title("Business Insights")
+
+    st.write("""
+    Key findings:
+
+    • Month-to-month contracts have higher churn.
+
+    • Electronic check customers churn more.
+
+    • Long-tenure customers rarely churn.
+
+    • Two-year contracts significantly reduce churn.
+    """)
+
+st.sidebar.markdown("## Model Performance")
+
+st.sidebar.metric(
+    "Accuracy",
+    "79.25%"
+)
+
+st.sidebar.metric(
+    "ROC-AUC",
+    "0.83"
+)
+
