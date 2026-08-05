@@ -41,5 +41,13 @@ def create_monthlyCharge_classifier(df):
 
     return df 
 
+def engineer_features(df):
 
+    df = create_new_customer_feature(df)
+
+    df = create_tenure_group(df)
+
+    df = create_monthlyCharge_classifier(df)
+
+    return df
 
