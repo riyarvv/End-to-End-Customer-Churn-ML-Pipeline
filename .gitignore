@@ -5,14 +5,20 @@
 __pycache__/
 *.pyc
 
-# Jupyter checkpoints
+# Jupyter
 .ipynb_checkpoints/
 
 # VS Code
 .vscode/
 
-# macOS
+# Mac
 .DS_Store
 
-# Generated files
-outputs/
+# Streamlit cache
+.streamlit/
+
+# Large datasets (optional)
+data/raw/
+
+# Temporary files
+*.log
