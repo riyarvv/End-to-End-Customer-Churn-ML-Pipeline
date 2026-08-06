@@ -209,3 +209,17 @@ def prediction_page():
     """)
         with st.expander("Customer Summary"):
             st.dataframe(input_df)
+
+        result = pd.DataFrame({
+            "Prediction":[prediction],
+            "Probability":[churn_probability]
+        })
+
+        csv = result.to_csv(index=False)
+
+        st.download_button(
+            label="📥 Download Prediction",
+            data=csv,
+            file_name="prediction.csv",
+            mime="text/csv"
+        )

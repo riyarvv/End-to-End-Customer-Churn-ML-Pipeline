@@ -2,12 +2,24 @@ import streamlit as st
 import sys
 from pathlib import Path
 
+# ---------------------------------------------------
+# Project Path
+# ---------------------------------------------------
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(BASE_DIR))
 
-from pages.prediction import prediction_page
-from pages.about import about_page
-from pages.business_insights import business_insights_page
+# ---------------------------------------------------
+# Import Pages
+# ---------------------------------------------------
+
+from views.prediction import prediction_page
+from views.about import about_page
+from views.business_insights import business_insights_page
+
+# ---------------------------------------------------
+# Page Configuration
+# ---------------------------------------------------
 
 st.set_page_config(
     page_title="Customer Churn Predictor",
@@ -15,7 +27,13 @@ st.set_page_config(
     layout="wide"
 )
 
+# ---------------------------------------------------
+# Sidebar
+# ---------------------------------------------------
+
 st.sidebar.title("📊 Customer Churn Predictor")
+
+st.sidebar.success("✅ Model Loaded")
 
 st.sidebar.metric(
     "Accuracy",
@@ -27,6 +45,18 @@ st.sidebar.metric(
     "0.83"
 )
 
+st.sidebar.metric(
+    "Algorithm",
+    "Logistic Regression"
+)
+
+st.sidebar.metric(
+    "Features",
+    "22"
+)
+
+st.sidebar.markdown("---")
+
 page = st.sidebar.radio(
     "Navigation",
     [
@@ -36,11 +66,25 @@ page = st.sidebar.radio(
     ]
 )
 
-if page=="Prediction":
+st.sidebar.markdown("---")
+
+st.sidebar.caption(
+    "Built using\n\n"
+    "- Python\n"
+    "- Scikit-Learn\n"
+    "- Streamlit\n"
+    "- Pandas"
+)
+
+# ---------------------------------------------------
+# Routing
+# ---------------------------------------------------
+
+if page == "Prediction":
     prediction_page()
 
-elif page=="About Model":
+elif page == "About Model":
     about_page()
 
-elif page=="Business Insights":
+elif page == "Business Insights":
     business_insights_page()
