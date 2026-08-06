@@ -3,11 +3,129 @@
 ## Project Overview
 An end-to-end Machine Learning project for customer churn prediction featuring data analysis, feature engineering, explainable AI, Streamlit deployment, SQL, and Power BI.
 
-## Folder structure
+## Dataset
 
-## Technologies
+Dataset Used:
 
-## Current Progress
+IBM Telco Customer Churn Dataset
+
+Target Variable:
+
+Churn (Yes / No)
+
+Number of Customers:
+
+7043
+
+Features:
+
+19 original features
+3 engineered features
+
+## Technologies Used
+
+Python
+
+Pandas
+
+NumPy
+
+Matplotlib
+
+Scikit-learn
+
+Streamlit
+
+Joblib
+
+Git
+
+GitHub
+
+Power BI 
+
+## Project Structure
+
+```text
+End-to-End-Customer-Churn-ML-Pipeline/
+
+app/
+    streamlit_app.py
+    views/
+
+data/
+
+models/
+
+src/
+
+outputs/
+
+notebooks/
+
+requirements.txt
+
+README.md
+```
+
+## Models Evaluated
+
+| Model | Precision | Recall | F1 | ROC-AUC |
+|------|------:|------:|------:|------:|
+| Logistic Regression | 0.63 | 0.52 | 0.57 | 0.835 |
+| Decision Tree | 0.48 | 0.50 | 0.49 | 0.653 |
+| Random Forest | 0.60 | 0.48 | 0.54 | 0.815 |
+
+## Streamlit Application
+
+The project includes an interactive Streamlit application where users can:
+
+- Enter customer information
+- Predict churn
+- View churn probability
+- See business recommendations
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/riyarvv/End-to-End-Customer-Churn-ML-Pipeline.git
+```
+
+Move into the project
+
+```bash
+cd End-to-End-Customer-Churn-ML-Pipeline
+```
+
+Create virtual environment
+
+```bash
+python -m venv .venv
+```
+
+Activate it
+
+Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the app
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+## Google Colab Timeline
 Day 1 completed 
 - Created github and google drive folder structure
 - Loaded dataset as dataFrame
@@ -69,3 +187,5 @@ Day 15 completed
 Day 16 completed
 - Model explainability
 - Identified features had greater impact on churn
+
+
