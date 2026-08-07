@@ -5,44 +5,30 @@ An end-to-end Machine Learning project for customer churn prediction featuring d
 
 ## Dataset
 
-Dataset Used:
+- Dataset Used: IBM Telco Customer Churn Dataset
 
-IBM Telco Customer Churn Dataset
+- Target Variable: Churn (Yes / No)
 
-Target Variable:
+- Number of Customers: 7043
 
-Churn (Yes / No)
-
-Number of Customers:
-
-7043
-
-Features:
-
-19 original features
-3 engineered features
+- Features:
+    - 19 original features
+    - 3 engineered features
 
 ## Technologies Used
 
+```
 Python
-
 Pandas
-
 NumPy
-
 Matplotlib
-
 Scikit-learn
-
 Streamlit
-
 Joblib
-
 Git
-
 GitHub
-
 Power BI 
+```
 
 ## Project Structure
 
@@ -84,6 +70,16 @@ The project includes an interactive Streamlit application where users can:
 - Predict churn
 - View churn probability
 - See business recommendations
+
+![Home](images/home_page.png)
+
+---
+
+![High Risk](images/prediction_yes.png)
+
+---
+
+![Low Risk](images/prediction_no.png)
 
 ## Installation
 
