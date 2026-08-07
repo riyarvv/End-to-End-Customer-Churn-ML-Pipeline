@@ -1,18 +1,19 @@
-import streamlit as st
-import pandas as pd
-import joblib
-
 from pathlib import Path
 
-from src.feature_engineering import engineer_features
-
 BASE_DIR = Path(__file__).resolve().parents[2]
+
+import joblib
 
 model = joblib.load(
     BASE_DIR /
     "models" /
     "logistic_regression.pkl"
 )
+
+import streamlit as st
+import pandas as pd
+
+from src.feature_engineering import engineer_features
 
 def prediction_page():
     st.header("Customer Information")
